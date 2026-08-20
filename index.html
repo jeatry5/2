@@ -1,1 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>SHIRETOKO — Image Sources</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f2efe6;
+    color: #243a32;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+/* 상단 */
+.hero {
+    min-height: 390px;
+    padding: 70px 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:
+        linear-gradient(rgba(38, 67, 57, 0.72), rgba(38, 67, 57, 0.82)),
+        linear-gradient(135deg, #315b4a, #527566);
+    color: white;
+}
+
+.small-title {
+    font-size: 12px;
+    letter-spacing: 4px;
+    opacity: 0.75;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-family: "Noto Serif JP", serif;
+    font-size: clamp(42px, 8vw, 82px);
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 560px;
+    opacity: 0.85;
+}
+
+/* 본문 */
+.content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 75px 25px 100px;
+}
+
+.section-title {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    font-family: "Noto Serif JP", serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.section-title span {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #789086;
+}
+
+/* 카드 */
+.source {
+    position: relative;
+    background: #fffdf8;
+    margin-bottom: 18px;
+    padding: 28px 32px;
+    display: grid;
+    grid-template-columns: 70px 1fr auto;
+    align-items: center;
+    gap: 25px;
+    border: 1px solid rgba(49, 91, 74, 0.10);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.source:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(38, 67, 57, 0.10);
+}
+
+.number {
+    font-family: "Noto Serif JP", serif;
+    font-size: 26px;
+    color: #315b4a;
+}
+
+.info h3 {
+    margin: 0 0 7px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.info p {
+    margin: 0;
+    font-size: 13px;
+    color: #78827d;
+}
+
+.source a {
+    display: inline-block;
+    padding: 10px 17px;
+    border: 1px solid #315b4a;
+    color: #315b4a;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    transition: 0.2s;
+}
+
+.source a:hover {
+    background: #315b4a;
+    color: white;
+}
+
+/* 안내문 */
+.note {
+    margin-top: 55px;
+    padding: 25px 28px;
+    border-left: 3px solid #315b4a;
+    background: rgba(255,255,255,0.45);
+}
+
+.note p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.9;
+    color: #69756f;
+}
+
+/* 푸터 */
+footer {
+    padding: 30px 25px;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #89948f;
+}
+
+/* 모바일 */
+@media (max-width: 650px) {
+
+    .hero {
+        min-height: 330px;
+        padding: 55px 25px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .content {
+        padding: 55px 18px 70px;
+    }
+
+    .source {
+        grid-template-columns: 45px 1fr;
+        gap: 15px;
+        padding: 23px;
+    }
+
+    .source a {
+        grid-column: 2;
+        justify-self: start;
+    }
+
+    .number {
+        font-size: 21px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+
+    <div class="small-title">
+        SHIRETOKO / 知床
+    </div>
+
+    <h1>Image Sources</h1>
+
+    <p>
+        시레토코 관광 프로젝트에 사용된 이미지의
+        출처와 원본 페이지를 정리한 공간입니다.
+    </p>
+
+</header>
+
+
+<main class="content">
+
+    <div class="section-title">
+        <h2>IMAGE SOURCES</h2>
+        <span>画像出典</span>
+    </div>
+
+
+    <!-- 01 -->
+    <div class="source">
+
+        <div class="number">01</div>
+
+        <div class="info">
+            <h3>시레토코</h3>
+            <p>iStockphoto · 시레토코 국립공원 이미지</p>
+        </div>
+
+        <a
+        href="https://www.istockphoto.com/kr/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%8B%9C%EB%A0%88%ED%86%A0%EC%BD%94-%EA%B5%AD%EB%A6%BD-%EA%B3%B5%EC%9B%90"
+        target="_blank">
+        원본 보기 →
+        </a>
+
+    </div>
+
+
+    <!-- 02 -->
+    <div class="source">
+
+        <div class="number">02</div>
+
+        <div class="info">
+            <h3>시레토코 오호츠크 유빙</h3>
+            <p>Japan Travel by NAVITIME</p>
+        </div>
+
+        <a
+        href="https://japantravel.navitime.com/ko/area/jp/guide/NTJtrv0573-ko/"
+        target="_blank">
+        원본 보기 →
+        </a>
+
+    </div>
+
+
+    <!-- 03 -->
+    <div class="source">
+
+        <div class="number">03</div>
+
+        <div class="info">
+            <h3>시레토코 오신코신 폭포</h3>
+            <p>Visit Hokkaido</p>
+        </div>
+
+        <a
+        href="https://www.visit-hokkaido.jp/kr/spot/detail_10414.html"
+        target="_blank">
+        원본 보기 →
+        </a>
+
+    </div>
+
+
+    <!-- 04 -->
+    <div class="source">
+
+        <div class="number">04</div>
+
+        <div class="info">
+            <h3>시레토코 고개</h3>
+            <p>Japan Bus Lines</p>
+        </div>
+
+        <a
+        href="https://japanbuslines.com/blog/ko/post/sightseeing260417/"
+        target="_blank">
+        원본 보기 →
+        </a>
+
+    </div>
+
+
+    <!-- 05 -->
+    <div class="source">
+
+        <div class="number">05</div>
+
+        <div class="info">
+            <h3>시레토코 후레페 폭포</h3>
+            <p>Visit Hokkaido</p>
+        </div>
+
+        <a
+        href="https://www.visit-hokkaido.jp/kr/spot/detail_10411.htm"
+        target="_blank">
+        원본 보기 →
+        </a>
+
+    </div>
+
+
+    <div class="note">
+
+        <p>
+            본 페이지는 시레토코 관광 프로젝트에 사용된 이미지의
+            출처를 한곳에 모아 확인할 수 있도록 제작되었습니다.
+            각 항목의 「원본 보기」를 선택하면 해당 이미지 또는
+            관련 정보가 있는 원문 페이지로 이동합니다.
+        </p>
+
+    </div>
+
+</main>
+
+
+<footer>
+    SHIRETOKO TOURISM PROJECT · IMAGE SOURCES
+</footer>
+
+</body>
+</html>
